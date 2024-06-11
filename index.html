@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Woodenkits</title>
+  <meta content="Wooden educational items industry" name="description">
+  <meta content="wooden educational wki" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/IMG_5805.JPG" rel="icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+<!--  Send Mail -->
+  <script type="text/javascript">
+    function sendEmail() {
+      const emailAddress = 'ritika.tamrakar@outlook.com';
+      const subject = document.getElementById('sender-subject').value;
+      const body = 'Hi Woodenkits,' + ',\n\n' +document.getElementById('sender-message').value + '\n\nRegards,\n' + document.getElementById('sender-name').value;
+
+      const emailLink = `mailto:${emailAddress}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      if (subject) {
+        window.open(emailLink, '_blank');
+        document.getElementById('sender-name').value = '';
+        document.getElementById('sender-subject').value = '';
+        document.getElementById('sender-message').value = '';
+      } else {
+        alert('Please enter all the fields for your email.');
+      }
+    }
+  </script>
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+         <img src="assets/img/IMG_5805.JPG" alt="">
+        <h1 class="sitename">Wooden Kits Industry</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home<br></a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <a class="btn-getstarted" href="#contact">Contact Us</a>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section">
+
+      <img src="assets/img/hero-bg-abstract.jpg" alt="" data-aos="fade-in" class="">
+
+      <div class="container">
+        <div class="row justify-content-center" data-aos="zoom-out">
+          <div class="col-xl-7 col-lg-9 text-center">
+            <h1>Discover the Magic of Learning with Our Wooden Educational Kits</h1>
+            <p>Crafted with precision and passion, our Montessori-inspired wooden educational kits spark curiosity and creativity in young minds. From laser-engraved puzzles to hands-on learning tools, we bring nature and education together to create enriching experiences for children. Explore our collection and see how we turn simple wood into endless learning possibilities.</p>
+          </div>
+        </div>
+        <div class="text-center" data-aos="zoom-out" data-aos-delay="100">
+          <a href="#about" class="btn-get-started">Get Started</a>
+        </div>
+
+        <div class="row gy-4 mt-5">
+          <div class="col-md-6 col-lg-3" data-aos="zoom-out" data-aos-delay="100">
+            <div class="icon-box">
+              <div class="icon"><i class="bi bi-easel"></i></div>
+              <h4 class="title"><a href="">Laser Cut Out and Engraving</a></h4>
+              <p class="description">Precision laser cutting and engraving for custom educational tools, gifts, and more. Transform ideas into beautifully crafted wooden pieces.</p>
+            </div>
+          </div><!--End Icon Box -->
+
+          <div class="col-md-6 col-lg-3" data-aos="zoom-out" data-aos-delay="200">
+            <div class="icon-box">
+              <div class="icon"><i class="bi bi-gem"></i></div>
+              <h4 class="title"><a href="">Montessori Items</a></h4>
+              <p class="description">Specializing in Montessori-inspired educational kits that foster hands-on learning and development. Designed to ignite curiosity and creativity in young minds.</p>
+            </div>
+          </div><!--End Icon Box -->
+
+          <div class="col-md-6 col-lg-3" data-aos="zoom-out" data-aos-delay="300">
+            <div class="icon-box">
+              <div class="icon"><i class="bi bi-geo-alt"></i></div>
+              <h4 class="title"><a href="">Wooden Decor</a></h4>
+              <p class="description">Handcrafted wooden decor to enhance any space with natural beauty and charm. From intricate wall art to bespoke home accents, each piece is a work of art.</p>
+            </div>
+          </div><!--End Icon Box -->
+
+          <div class="col-md-6 col-lg-3" data-aos="zoom-out" data-aos-delay="400">
+            <div class="icon-box">
+              <div class="icon"><i class="bi bi-command"></i></div>
+              <h4 class="title"><a href="">Custom Signage and Accessories</a></h4>
+              <p class="description">Personalized signage and accessories, including name cards, hotel key rings, and signage boards. Perfect for events, businesses, or as thoughtful gifts, our wooden creations leave a lasting impression.</p>
+            </div>
+          </div><!--End Icon Box -->
+
+        </div>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>About Us<br></h2>
+        <p>At Wooden Kits, we are passionate about merging education and craftsmanship. Specializing in Montessori-inspired wooden educational kits, we believe in the power of hands-on learning to foster creativity and curiosity in children. Our precision laser cutting and engraving services ensure every piece is made with the utmost care and detail. From wooden decor to custom signage and accessories, we create products that bring nature's beauty into everyday life.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
+            <p>
+              Join us on our journey to combine nature and education in the most inspiring ways.
+            </p>
+            <ul>
+              <li><i class="bi bi-check2-circle"></i> <span>Montessori-Inspired Educational Kits are designed to spark curiosity and encourage hands-on learning.</span></li>
+              <li><i class="bi bi-check2-circle"></i> <span>Laser Cut Out and Engraving: Precision-crafted wooden pieces for various needs.</span></li>
+            </ul>
+          </div>
+          <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="200">
+            <ul>
+
+              <li><i class="bi bi-check2-circle"></i> <span>Handcrafted Wooden Decor: Beautiful, natural accents for any space.</span></li>
+              <li><i class="bi bi-check2-circle"></i> <span>Custom Signage and Accessories: Personalized items like name cards, hotel key rings, and signage boards for a lasting impression.</span></li>
+            </ul>
+          </div>
+
+<!--          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">-->
+<!--            <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>-->
+<!--            <a href="#" class="read-more"><span>Read More</span><i class="bi bi-arrow-right"></i></a>-->
+<!--          </div>-->
+
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Clients Section -->
+    <section id="clients" class="clients section">
+
+      <div class="container" data-aos="fade-up">
+
+        <div class="row gy-4">
+
+          <div class="col-xl-2 col-md-3 col-6 client-logo">
+            <img src="assets/img/clients/ecec_logo-01.png" class="img-fluid" alt="">
+          </div><!-- End Client Item -->
+
+          <div class="col-xl-2 col-md-3 col-6 client-logo">
+            <img src="assets/img/clients/kazi-studio.png" class="img-fluid" alt="">
+          </div><!-- End Client Item -->
+
+<!--          <div class="col-xl-2 col-md-3 col-6 client-logo">-->
+<!--            <img src="assets/img/clients/nepal-media-society.jpg" class="img-fluid" alt="">-->
+<!--          </div>&lt;!&ndash; End Client Item &ndash;&gt;-->
+
+          <div class="col-xl-2 col-md-3 col-6 client-logo">
+            <img src="assets/img/clients/rato-bangla.png" class="img-fluid" alt="">
+          </div><!-- End Client Item -->
+
+          <div class="col-xl-2 col-md-3 col-6 client-logo">
+            <img src="assets/img/clients/unicef.png" class="img-fluid" alt="">
+          </div><!-- End Client Item -->
+
+          <div class="col-xl-2 col-md-3 col-6 client-logo">
+            <img src="assets/img/clients/world-edu.png" class="img-fluid" alt="">
+          </div><!-- End Client Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Clients Section -->
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Testimonials</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="swiper" data-speed="600" data-delay="5000" data-breakpoints="{ &quot;320&quot;: { &quot;slidesPerView&quot;: 1, &quot;spaceBetween&quot;: 40 }, &quot;1200&quot;: { &quot;slidesPerView&quot;: 3, &quot;spaceBetween&quot;: 40 } }">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              },
+              "breakpoints": {
+                "320": {
+                  "slidesPerView": 1,
+                  "spaceBetween": 40
+                },
+                "1200": {
+                  "slidesPerView": 3,
+                  "spaceBetween": 20
+                }
+              }
+            }
+          </script>
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+            <p>
+              <i class=" bi bi-quote quote-icon-left"></i>
+                <span>They have supplied us with wooden educational materials and toys from the time we established Early Childhood Education Centre in 2001. We have had a pleasant relationship so far. The performance of the supplier has been found satisfactory in terms of quality of the materials. Because of external difficulties, like load shedding, meeting deadlines have been a challenge. We have found them honest and pleasant to work with.</span>
+                <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+<!--                <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">-->
+                <h3>Ms. Reiny de Wit</h3>
+                <h4>ECEC Managing Director</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span> Wooden Kits Industry has been one of our most trusted and reliable regular suppliers. Ever since we collaborated with them, they have provided good quality products with good customer service. Deliveries are received on time, and they are always quick to resolve any issues that arise.
+It has been a pleasure doing business with Wooden Kits Industry and we look forward to continuing our business relationship with them.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+<!--                <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">-->
+                <h3>Uttam Thapa</h3>
+                <h4>School Manager, Rato Bangla School</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>With the years of experience and their professionalism we found Woodenkits to have an outstanding hardworking team who are extremely careful with every work they do and they always deliver in a timely manner.
+Hence, with our experience we would highly recommend Wooden Kits Industry to everyone who wishes to work with them in the future. Should you have any queries regarding them, then please do not hesitate to contact us.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+<!--                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">-->
+                <h3>Sidharth Sherpa</h3>
+                <h4>Senior Administrative & HR Officer, World Education </h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>The supplier is working with UNICEF since last 2001. The supplier has supplied wooden toys, educational materials during this period.
+                    The performance of the supplier has been found satisfactory in terms of meeting deadline of delivery and quality of the educational materials.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+<!--                <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">-->
+                <h3>Sharad Koirala</h3>
+                <h4>Supply Specialist UNICEF</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+<!--            <div class="swiper-slide">-->
+<!--              <div class="testimonial-item">-->
+<!--                <p>-->
+<!--                  <i class="bi bi-quote quote-icon-left"></i>-->
+<!--                  <span>Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.</span>-->
+<!--                  <i class="bi bi-quote quote-icon-right"></i>-->
+<!--                </p>-->
+<!--                <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">-->
+<!--                <h3>John Larson</h3>-->
+<!--                <h4>Entrepreneur</h4>-->
+<!--              </div>-->
+<!--            </div>&lt;!&ndash; End testimonial item &ndash;&gt;-->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+    </section><!-- /Testimonials Section -->
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Portfolio</h2>
+        <p>Here are some of our products</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+<!--          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">-->
+<!--            <li data-filter="*" class="filter-active">All</li>-->
+<!--            <li data-filter=".filter-app">App</li>-->
+<!--            <li data-filter=".filter-product">Card</li>-->
+<!--            <li data-filter=".filter-branding">Web</li>-->
+<!--          </ul>-->
+          <!-- End Portfolio Filters -->
+
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <img src="assets/img/masonry-portfolio/abacus.jpg" class="img-fluid" alt="Wooden Abacus">
+              <div class="portfolio-info">
+                <h4>Abacus</h4>
+                <p>Classic wooden abacus designed to make learning arithmetic engaging and hands-on, helping children develop essential math skills.</p>
+                <a href="assets/img/masonry-portfolio/abacus.jpg" title="Abacus" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+<!--                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>-->
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <img src="assets/img/masonry-portfolio/base-10.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Base ten blocks</h4>
+                <p>Wooden math manipulatives representing ones, tens, hundreds, and thousands, facilitating hands-on learning of place value and arithmetic concepts for students of all ages.</p>
+                <a href="assets/img/masonry-portfolio/base-10.jpg" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+<!--                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>-->
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <img src="assets/img/masonry-portfolio/beads.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Beads</h4>
+                <p>Beautifully crafted wooden beads for enhancing fine motor skills and creativity in children through sorting, stringing, and counting activities.</p>
+                <a href="assets/img/masonry-portfolio/beads.jpg" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+<!--                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>-->
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <img src="assets/img/masonry-portfolio/building-blocks.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Building Blocks</h4>
+                <p>Versatile and durable wooden blocks designed to inspire creativity and spatial awareness in children through open-ended play</p>
+                <a href="assets/img/masonry-portfolio/building-blocks.jpg" title="App 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+<!--                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>-->
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <img src="assets/img/masonry-portfolio/doll-house-1.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Doll House Furniture</h4>
+                <p>LIntricately designed wooden furniture sets to spark imaginative play and storytelling in children's dollhouse adventures.</p>
+                <a href="assets/img/masonry-portfolio/doll-house-1.jpg" title="Product 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+<!--                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>-->
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <img src="assets/img/masonry-portfolio/name-blocks.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Name Blocks</h4>
+                <p>Personalised Name Blocks for house or business decorations</p>
+                <a href="assets/img/masonry-portfolio/name-blocks.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+<!--                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>-->
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <img src="assets/img/masonry-portfolio/paper-pattern.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Paper cutout patterns</h4>
+                <p>Intricately designed paper patterns cut with precision using laser technology, offering a wide range of decorative options for various crafts, events, and artistic projects.</p>
+                <a href="assets/img/masonry-portfolio/paper-pattern.jpg" title="App 3" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+<!--                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>-->
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <img src="assets/img/masonry-portfolio/pythagoras.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Pythagoras Theorem </h4>
+                <p>A wooden board illustrating the Pythagorean theorem, providing a tactile and visual aid for students to understand and apply the relationship between the sides of a right triangle.</p>
+                <a href="assets/img/masonry-portfolio/pythagoras.jpg" title="Product 3" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+<!--                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>-->
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <img src="assets/img/masonry-portfolio/shape-sort.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Shape Sorting Box</h4>
+                <p>A wooden box with various cut-out shapes, designed to engage toddlers in learning shapes, colors, and fine motor skills through interactive play and sorting activities.</p>
+                <a href="assets/img/masonry-portfolio/shape-sort.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+<!--                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>-->
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <img src="assets/img/masonry-portfolio/shapes-color.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Shape, Color and Size box</h4>
+                <p>A wooden box with various cut-out shapes, designed to engage toddlers in learning shapes, colors, and fine motor skills through interactive play and sorting activities.</p>
+                <a href="assets/img/masonry-portfolio/shapes-color.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <!--                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>-->
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <img src="assets/img/masonry-portfolio/valley-depth.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Miniature Valley Model </h4>
+                <p>A miniature model of valleys and hills for people to learn about the natural world. </p>
+
+                <a href="assets/img/masonry-portfolio/valley-depth.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <!--                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>-->
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <img src="assets/img/masonry-portfolio/weather-board.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Weather Board</h4>
+                <p>A wooden board displaying various weather conditions and symbols, providing an interactive way for children to learn about and track the weather daily.</p>
+                <a href="assets/img/masonry-portfolio/weather-board.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <!--                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>-->
+              </div>
+            </div><!-- End Portfolio Item -->
+          </div><!-- End Portfolio Container -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Section -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="mb-4" data-aos="fade-up" data-aos-delay="200">
+          <iframe style="border:0; width: 100%; height: 270px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d883.4926621656133!2d85.32098376956165!3d27.656379798513232!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb177d063f9a85%3A0xd7ea1523fbeaaf3d!2sWooden%20Kits%20Industry!5e0!3m2!1sen!2sau!4v1718081915672!5m2!1sen!2sau" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div><!-- End Google Maps -->
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4">
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+              <i class="bi bi-geo-alt flex-shrink-0"></i>
+              <div>
+                <h3>Address</h3>
+                <p>Satdobato, Lalitpur</p>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+              <i class="bi bi-telephone flex-shrink-0"></i>
+              <div>
+                <h3>Call Us</h3>
+                <p>+977 1-5152415</p>
+                <p>+977 9851063391</p>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="500">
+              <i class="bi bi-envelope flex-shrink-0"></i>
+              <div>
+                <h3>Email Us</h3>
+                <p>woodenkits@gmail.com</p>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="500">
+              <i class="bi bi-facebook flex-shrink-0"></i>
+              <div>
+                <h3>Facebook</h3>
+                <a href="https://www.facebook.com/WoodenKitsIndustry" target="_blank">Woodenkits Fb</a>
+              </div>
+            </div><!-- End Info Item -->
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="500">
+              <i class="bi bi-instagram flex-shrink-0"></i>
+              <div>
+                <h3>Instagram</h3>
+                <a href="https://www.instagram.com/woodenkits/" target="_blank">Woodenkits Insta</a>
+              </div>
+            </div><!-- End Info Item -->
+          </div>
+
+          <div class="col-lg-8">
+            <div class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+              <div class="row gy-4">
+
+                <div class="col-md-12">
+                  <input type="text" name="name" class="form-control" id="sender-name" placeholder="Your Name" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <input type="text" class="form-control" name="subject" id="sender-subject" placeholder="Subject" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <textarea class="form-control" name="message" rows="6" id="sender-message" placeholder="Message" required=""></textarea>
+                </div>
+
+                <div class="col-md-12 text-center">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                  <button onclick="sendEmail()">Send Message</button>
+                </div>
+
+              </div>
+            </div>
+          </div><!-- End Contact Form -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
